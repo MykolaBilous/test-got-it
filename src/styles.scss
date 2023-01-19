@@ -132,8 +132,8 @@ $test-got-it-theme: mat-light-theme((
     background-color: #000;
     padding: 15px;
     line-height: 30px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 30px -4px rgb(197 32 27 / 75%);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 5px 15px 15px -4px rgb(255 255 255 / 75%);
     
     .trial-btn {
       background: var(--mainColor);

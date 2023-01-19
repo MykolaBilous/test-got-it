@@ -77,12 +77,10 @@ export class ArchivePageComponent implements OnInit {
           this.list = list
           this.getListEntries = this.list.entries.filter(listelem => listelem.programType == params.type).sort(this.archiveDataProcessingService.sortByYear)
           this.listEntries = this.getListEntries
-          this.listEntriesTotal = this.listEntries.length
-          this.startPagePagination = 1
+          this.updatePagination()
           this.loading = false
+        })
     })
-    })
-    
   }
 
   OninputSearch(event: KeyboardEvent) {
