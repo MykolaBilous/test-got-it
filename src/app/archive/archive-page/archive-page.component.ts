@@ -105,7 +105,7 @@ export class ArchivePageComponent implements OnInit {
     this.updatePagination()
   }
 
-///////////////START Datepicker functions//////////////////
+/////////////// Datepicker functions //////////////////
  openDatePicker(datepicker: MatDatepicker<Moment>) {
     if (!datepicker.opened) {
       datepicker.open()
@@ -237,5 +237,5 @@ export class ArchivePageComponent implements OnInit {
       alert('The start date must be greater than the end date!')
     }
   }
-  ///////////////END Datepicker functions//////////////////
+  /////////////// Datepicker functions END//////////////////
 }
