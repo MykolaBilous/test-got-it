@@ -47,11 +47,11 @@ export class ArchivePageComponent implements OnInit {
   list: List
   getListEntries: ListEntries[] = []
   listEntries: ListEntries[] = []
-  listType: string = ''
+  listType = ''
   listEntriesTotal: number
   startPagePagination = 1
-  pageSize: number = 10
-  search: string = ''
+  pageSize = 10
+  search = ''
   loading: boolean = false
 
   @ViewChild('startPickerInput') startDateInput: ElementRef
@@ -62,7 +62,7 @@ export class ArchivePageComponent implements OnInit {
   minDate: Date = new Date(1895, 1, 1)
   maxDate: Date = new Date()
   dateFilterInput: DatePipe = new DatePipe('en-US');
-  yearLength: number = 4
+  yearLength = 4
   minYear = 1895
  
   constructor(private archiveDataProcessingService: ArchiveDataProcessingService, private route: ActivatedRoute) {}
