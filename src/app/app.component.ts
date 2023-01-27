@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  date: Date = new Date()
   title: string = '';
   archiveHeader: boolean = false
 
